@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        .container {
+            width: 40%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            border: white;
+            margin: 10px 0;
+        }
+
+        .button {
+            width: 100%;
+            height: 35px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: auto;
+            border: solid 5px blue;
+            color: white;
+        }
+
+        .mensaje-error {
+            color: tomato;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de Registro</h1>        
+        <form method="POST" action="/user/register" enctype="multipart/form-data">
+            <label for="">Nombre Completo:</label>
+            <input 
+            type="text" 
+            name="nombre"
+            class="input"
+            value="<%= locals.OldData ? OldData.nombre : null %>"
+            >
+            <% if (locals.errors && errors.nombre) { %>
+            <p class="mensaje-error"><%= errors.nombre.msg %> </p>   
+            <% } %>
+            <br>
+            <label for="">Correo Electronico:</label>
+            <input 
+            type="text" 
+            name="mail"
+            class="input"
+            value="<%= locals.OldData ? OldData.mail : null %>"
+            >
+            <% if (locals.errors && errors.mail) { %>
+                <p class="mensaje-error"><%= errors.mail.msg %> </p>   
+            <% } %>
+            <br>
+            <label for="">Password:</label>
+            <input 
+            type="password" 
+            name="password"
+            class="input"
+            >
+            <% if (locals.errors && errors.password) { %>
+                <p class="mensaje-error"><%= errors.password.msg %> </p>   
+            <% } %>
+            <br>
+            <label for="">Pais de Nacimiento:</label>
+            <select name="pais"  class="input">
+                <option value="">Elegí un Pais</option>
+                <option value="arg">Argentina</option>
+                <option value="bra">Brasil</option>
+                <option value="uru">Uruguay</option>
+                <option value="bol">Bolivia</option>
+            </select>
+            <% if (locals.errors && errors.pais) { %>
+                <p class="mensaje-error"><%= errors.pais.msg %> </p>   
+            <% } %>
+            <br>
+            <label for="">Imagen de Perfil:</label>
+            <input type="file" name="avatar"  class="input">
+            <% if (locals.errors && errors.avatar) { %>
+                <p class="mensaje-error"><%= errors.avatar.msg %> </p>   
+            <% } %>
+            <br>
+            <button type="submit" class="button">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
