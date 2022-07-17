@@ -11,7 +11,7 @@ const controller = {
                 errors: resultValidation.mapped(),
                 OldData : req.body
             });
-        } res.send("Ok, la vaidacion fue exitosa")
+        } res.send("Ok, la validacion fue exitosa")
     },
     login: (req, res) => {
         return res.render("userLoginForm");
