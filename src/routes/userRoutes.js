@@ -23,7 +23,8 @@ const validations = [
     body("nombre").notEmpty().withMessage("Tiene que escribir tu nombre"),
     body("mail").notEmpty().withMessage("Tienes que escribir un correo electronico").bail()
     .isEmail().withMessage("Debes escribir un formato de correo valido"),
-    body("password").notEmpty().withMessage("Tienes que escribir una contraseña"),
+    body("password").notEmpty().withMessage("Tienes que escribir una contraseña").bail()
+    .isInt().withMessage("La contraseña debe ser numerica"),
     body("pais").notEmpty().withMessage("Tienes que elegir un Pais"),
     body("avatar").custom((value, {req})=>{
         let file = req.file;
