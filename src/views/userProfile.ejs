@@ -50,9 +50,13 @@
     </style>
 </head>
     <% if(locals.isLogged) { %>
-        <body style="background-color: red;">
+        <body style="background-color: rgb(90, 218, 218);">
     <% } %>
-    <div class="container">
+
+    <% if(locals.isLogged) { %>
+    <div class="container"
+    style="background-color: red;">
+        <% } %>   
         <%- include('partials/nav-bar'); %>
         <h1>User Profile</h1>
         <h3>Hola <%= user.nombre %></h3>

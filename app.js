@@ -3,6 +3,7 @@ const express = require("express");
 const path = require("path");
 const session = require("express-session");
 const usserLoggedMiddleware = require("./src/middlewares/userMiddleware");
+const cookies = require("cookie-parser")
 
 const app = express();
 const port = 3000;
@@ -17,6 +18,8 @@ app.use(session({
 app.use(express.static(publicPath));
 app.use(express.urlencoded({extended: false})); //IMPORTANTE caputa info. que viene desde un form. en req.body, sin ella no se puede obtener info. del body
 app.use(usserLoggedMiddleware);
+app.use(cookies());//To lo que se guarda en el cliente/navegador
+
 
 //Ruteadores
 const mainRoutes = require("./src/routes/mainRoutes");

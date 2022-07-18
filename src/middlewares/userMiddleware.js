@@ -5,6 +5,12 @@ function userLoggedMiddleware (req, res, next){
     if(req.session && req.session.usuarioLogueado){
     res.locals.isLogged = true;
     }
+
+    //Quiero traer la cookie que seteamos cuando en body viaja rememberMe on:
+    //let emailInCookie = req.cookies.userMail//le digo que del request quiero las cookies y quiero obtener lo que vino en el userMail. 
+   
+   //let colorInCookie = 
+
     next();
 }
 

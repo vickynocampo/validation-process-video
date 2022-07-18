@@ -22,5 +22,67 @@
   "password": "$2a$10$Dqnxy6jDOk.TRli9gh/TbufQzGgQl.SJxNYAZkkMdd/C7Oek3QLOW",
   "pais": "arg",
   "avatar": "1658106171800img.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Victoria Navarro Ocampo",
+  "mail": "vickynocampo2@hotmail.com",
+  "password": "$2a$10$xWjzb684wMau88sxPb8GY.b2zAYAZ0eDfmNgRDzMno8zWvWcMdAl.",
+  "pais": "arg",
+  "avatar": "1658162774598img.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "Victoria",
+  "mail": "vickynocampo20@gmail.com",
+  "password": "$2a$10$aR/EUGDq47zyyKADX5pyDegYIxJD1WM1.W15SNbxSM3yfBI8fIv2W",
+  "pais": "bra",
+  "colores": "amarillo",
+  "avatar": "1658163069600img.jpg"
+ },
+ {
+  "id": 6,
+  "nombre": "Victoria",
+  "mail": "avickynocampo@hotmail.com",
+  "password": "$2a$10$hbhFdY6xOrcTmeoJdTrW1O4F3s.SfBeTBrA/l0CBAEN0ATJ3zd9Pq",
+  "pais": "arg",
+  "colores": "",
+  "avatar": "1658164757840img.jpg"
+ },
+ {
+  "id": 7,
+  "nombre": "victoria",
+  "mail": "vickynocampo2016@gmail.co",
+  "password": "$2a$10$pB/bzkdXEVenhlKffKlSr.5UoFzr5daA4iB1/A/Apkd0Qoep3.7um",
+  "pais": "arg",
+  "colores": "yellow",
+  "avatar": "1658164777468img.jpg"
+ },
+ {
+  "id": 8,
+  "nombre": "Victoria",
+  "mail": "v@hotmail.com",
+  "password": "$2a$10$sycRZ1a.hOwOiti40oo1a.FnjB8jOqKslRcBiwKuRZerbv6OBKmu.",
+  "pais": "arg",
+  "colores": "blue",
+  "avatar": "1658165816171img.jpg"
+ },
+ {
+  "id": 9,
+  "nombre": "a",
+  "mail": "avickyn@hotmail.com",
+  "password": "$2a$10$fj4RjI/3b11IQBuRq/FRAOaaLklcjOsLWOAN59a61UhXzinJty1Um",
+  "pais": "arg",
+  "colores": "yellow",
+  "avatar": "1658165868833img.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "v",
+  "mail": "vno@gm.com",
+  "password": "$2a$10$XD78MxqfHG/k3LZwQ2WBdOf3nlL4O9baTp17JoZ8VJgMnm7Hleid.",
+  "pais": "arg",
+  "colores": "pink",
+  "avatar": "1658166462184img.jpg"
  }
 ]
