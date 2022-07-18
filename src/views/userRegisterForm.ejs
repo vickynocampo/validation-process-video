@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: grey;
+            background-color:rgb(197, 195, 195);
         }
 
         .container {
@@ -90,7 +90,7 @@
             <% } %>
             <br>
             <label for="">Imagen de Perfil:</label>
-            <input type="file" name="avatar"  class="input">
+            <input type="file" name="avatar"  class="input" value="<%= locals.OldData ? OldData.avatar : null %>">
             <% if (locals.errors && errors.avatar) { %>
                 <p class="mensaje-error"><%= errors.avatar.msg %> </p>   
             <% } %>

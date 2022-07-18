@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: false})); //IMPORTANTE caputa info. que vi
 const mainRoutes = require("./src/routes/mainRoutes");
 const userRoutes = require("./src/routes/userRoutes");
 
-const publicPath = path.resolve(__dirname, "./public");
+const publicPath = path.resolve(__dirname, "./src/public");
 app.use(express.static(publicPath));
 
 //Template Engine
