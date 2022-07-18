@@ -52,10 +52,11 @@
 
 <body>
     <div class="container">
+        <%- include('partials/nav-bar'); %>
         <h1>User Profile</h1>
-        <h3>Hola Usuario: </h3>
-        <img src="/images/avatars/1658100728101img.jpg" alt="foto-perfil" class="avatar">   
-        <h4>mail</h4>
+        <h3>Hola <%= user.nombre %></h3>
+        <img src="/images/avatars/<%= user.avatar %>" alt="foto-perfil" class="avatar">   
+        <h4> <%= user.mail %></h4>
    </div>
 </body>
 </html>

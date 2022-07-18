@@ -39,9 +39,11 @@ const controller = {
         // return res.send("Ok, se guardo al usuario")
         return res.redirect("/user/login");
     },
+
     login: (req, res) => {
         return res.render("userLoginForm");
     },
+
     loginProcess: (req, res) => {
         //usamos el metodo de findByField para pasarle por parametro el mail ingresado en el form, si el usuario existe, lo devuelve.
         let userToLogin = User.findByField("mail", req.body.mail);
@@ -51,6 +53,9 @@ const controller = {
             //Antes debemos usar bcryptjs.compareSync:
             let claveEsCorrecta = bcrypt.compareSync(req.body.password, userToLogin.password); //Esto devuelve un booleano
             if(claveEsCorrecta){
+                //Si es correcto vamos a querer usar session para guardar la sesion del usuario, pero antes borramos la password por seguridad:
+               delete userToLogin.password;
+               req.session.usuarioLogueado = userToLogin;
                 return res.redirect("/user/profile")
             } 
             return res.render("userLoginForm", {errors:{mail: {msg: "Las credenciales son invalidas"}}});
@@ -60,7 +65,14 @@ const controller = {
     },
 
     profile: (req, res) => {
-        return res.render("userProfile");
+        //console.log(req.session); //Info del usuario. Con esta info puedo moverme en las distintas vistas con la session activa. Lo que no quiero es el password, por ello borraremos 
+        return res.render("userProfile", {user: req.session.usuarioLogueado});//le pasamos a la vista la variable user que va a tener del request toda la sesion del userlogged, luego debemos ir a configurar la vista porfile
+    },
+    
+    logOut: (req, res)=> {
+        req.session.destroy(); //Borra todo lo que esta en session
+        console.log(req.session)
+        return res.redirect("/");
     }
 }
 

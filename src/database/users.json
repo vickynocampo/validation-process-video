@@ -6,5 +6,21 @@
   "password": "$2a$10$Q1oRO9p58cDnHphctbZ.LOYIUgvDm3OIEwkSUCXvQE8RAz/VNhGJm",
   "pais": "arg",
   "avatar": "1658100728101img.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "Victoria",
+  "mail": "vickynocampo@gmail.com",
+  "password": "$2a$10$YTWyq9HxyMU8cC8T196o3OMBlxE5QdftjYye11HHdeX2Iq52POXkW",
+  "pais": "arg",
+  "avatar": "1658104314603img.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Vicky",
+  "mail": "vickynocampo2016@gmail.com",
+  "password": "$2a$10$Dqnxy6jDOk.TRli9gh/TbufQzGgQl.SJxNYAZkkMdd/C7Oek3QLOW",
+  "pais": "arg",
+  "avatar": "1658106171800img.jpg"
  }
 ]

@@ -1,19 +1,24 @@
 //Requires:
 const express = require("express");
 const path = require("path");
+const session = require("express-session");
 
 const app = express();
 const port = 3000;
+const publicPath = path.resolve(__dirname, "./src/public");
 
 //Middlewares
+app.use(session({
+    secret: "Informacion confidencial",
+    resave: false,
+    saveUninitialized: false,
+}));//Session es un objeto literal que vive en el request: req.session y desde ahi accedo a todo lo que tengo en el request
+app.use(express.static(publicPath));
 app.use(express.urlencoded({extended: false})); //IMPORTANTE caputa info. que viene desde un form. en req.body, sin ella no se puede obtener info. del body
 
 //Ruteadores
 const mainRoutes = require("./src/routes/mainRoutes");
 const userRoutes = require("./src/routes/userRoutes");
-
-const publicPath = path.resolve(__dirname, "./src/public");
-app.use(express.static(publicPath));
 
 //Template Engine
 app.set('view engine', 'ejs');
