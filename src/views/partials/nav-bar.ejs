@@ -1,5 +1,13 @@
 <ul>
-<li style="display:inline;"><a href="/user/register">Registrarme</a></li>
-<li style="display:inline;"><a href="/user/login">Login</a></li>
-<li style="display:inline;"><a href="/user/logOut">Logout</a></li>
+<% if(locals.isLogged) { %>
+ 
+    <li style="display:inline;"><a href="/user/logOut">Logout</a></li>
+   
+<% } else { %> 
+        
+    <li style="display:inline;"><a href="/user/register">Registrarme</a></li>
+    <li style="display:inline;"><a href="/user/login">Login</a></li>
+
+<% } %>
+
 </ul>

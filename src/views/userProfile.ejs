@@ -49,8 +49,9 @@
         
     </style>
 </head>
-
-<body>
+    <% if(locals.isLogged) { %>
+        <body style="background-color: red;">
+    <% } %>
     <div class="container">
         <%- include('partials/nav-bar'); %>
         <h1>User Profile</h1>
