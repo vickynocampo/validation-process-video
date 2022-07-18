@@ -1,88 +1,20 @@
 [
  {
   "id": 1,
-  "nombre": "Victoria Navarro Ocampo",
+  "nombre": "Victoria",
   "mail": "vickynocampo@hotmail.com",
-  "password": "$2a$10$Q1oRO9p58cDnHphctbZ.LOYIUgvDm3OIEwkSUCXvQE8RAz/VNhGJm",
+  "password": "$2a$10$pnUWBfwyYBVoZPy1BHNTnOBDbIsG.YQk6LoLUBhzpkVVtIa9NGCHu",
   "pais": "arg",
-  "avatar": "1658100728101img.jpg"
+  "colores": "yellow",
+  "avatar": "1658176165245img.jpg"
  },
  {
   "id": 2,
-  "nombre": "Victoria",
-  "mail": "vickynocampo@gmail.com",
-  "password": "$2a$10$YTWyq9HxyMU8cC8T196o3OMBlxE5QdftjYye11HHdeX2Iq52POXkW",
+  "nombre": "prueba",
+  "mail": "prueba@pr.com",
+  "password": "$2a$10$hkq2ra6aRBBl4gyQD7ZfwOBolr0GtV2gvF9liNRHWJTqYzjAfzP5m",
   "pais": "arg",
-  "avatar": "1658104314603img.jpg"
- },
- {
-  "id": 3,
-  "nombre": "Vicky",
-  "mail": "vickynocampo2016@gmail.com",
-  "password": "$2a$10$Dqnxy6jDOk.TRli9gh/TbufQzGgQl.SJxNYAZkkMdd/C7Oek3QLOW",
-  "pais": "arg",
-  "avatar": "1658106171800img.jpg"
- },
- {
-  "id": 4,
-  "nombre": "Victoria Navarro Ocampo",
-  "mail": "vickynocampo2@hotmail.com",
-  "password": "$2a$10$xWjzb684wMau88sxPb8GY.b2zAYAZ0eDfmNgRDzMno8zWvWcMdAl.",
-  "pais": "arg",
-  "avatar": "1658162774598img.jpg"
- },
- {
-  "id": 5,
-  "nombre": "Victoria",
-  "mail": "vickynocampo20@gmail.com",
-  "password": "$2a$10$aR/EUGDq47zyyKADX5pyDegYIxJD1WM1.W15SNbxSM3yfBI8fIv2W",
-  "pais": "bra",
-  "colores": "amarillo",
-  "avatar": "1658163069600img.jpg"
- },
- {
-  "id": 6,
-  "nombre": "Victoria",
-  "mail": "avickynocampo@hotmail.com",
-  "password": "$2a$10$hbhFdY6xOrcTmeoJdTrW1O4F3s.SfBeTBrA/l0CBAEN0ATJ3zd9Pq",
-  "pais": "arg",
-  "colores": "",
-  "avatar": "1658164757840img.jpg"
- },
- {
-  "id": 7,
-  "nombre": "victoria",
-  "mail": "vickynocampo2016@gmail.co",
-  "password": "$2a$10$pB/bzkdXEVenhlKffKlSr.5UoFzr5daA4iB1/A/Apkd0Qoep3.7um",
-  "pais": "arg",
-  "colores": "yellow",
-  "avatar": "1658164777468img.jpg"
- },
- {
-  "id": 8,
-  "nombre": "Victoria",
-  "mail": "v@hotmail.com",
-  "password": "$2a$10$sycRZ1a.hOwOiti40oo1a.FnjB8jOqKslRcBiwKuRZerbv6OBKmu.",
-  "pais": "arg",
-  "colores": "blue",
-  "avatar": "1658165816171img.jpg"
- },
- {
-  "id": 9,
-  "nombre": "a",
-  "mail": "avickyn@hotmail.com",
-  "password": "$2a$10$fj4RjI/3b11IQBuRq/FRAOaaLklcjOsLWOAN59a61UhXzinJty1Um",
-  "pais": "arg",
-  "colores": "yellow",
-  "avatar": "1658165868833img.jpg"
- },
- {
-  "id": 10,
-  "nombre": "v",
-  "mail": "vno@gm.com",
-  "password": "$2a$10$XD78MxqfHG/k3LZwQ2WBdOf3nlL4O9baTp17JoZ8VJgMnm7Hleid.",
-  "pais": "arg",
-  "colores": "pink",
-  "avatar": "1658166462184img.jpg"
+  "colores": "violet",
+  "avatar": "1658183246837img.jpg"
  }
 ]

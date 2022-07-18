@@ -1,10 +1,9 @@
+// CRUD: Create, Read, Update and Delete
 // 1. Guardar al usuario en la DB: ok
 // 2. Buscar al usuario que se que quiere loguear por su email: ok
 // 3. Buscar a un usuario por su Id: ok
 // 4. Editar la info. de un usuario
 // 5. Eliminar un usuario de la DB: ok
-
-//CRUD: Create, Read, Update and Delete
 
 const fs = require("fs");
 const path = require("path");
@@ -62,7 +61,7 @@ const User = {
             ...userData  //uso propagacion para que tambien agregue la userData que llega por parametro
         }
         
-        //Lo Insero en el array con un push al array de usuarios con la data del usuario nuevo que llega por newUser
+        //Lo Inserto en el array con un push al array de usuarios con la data del usuario nuevo que llega por newUser
         allUsers.push(newUser);
 
         //Lo escribo en el arhcivo, el cual hasta este moneto allUsers sigue siendo un array y yo debo escrbir el arhivo en formato JSON, por ello uso fs para escribir 
@@ -70,7 +69,6 @@ const User = {
         
         //Devuelvo al nuevo usario
         return newUser;
-      
     },
 
     delete: function (id){

@@ -43,7 +43,7 @@
             height: 250px;
             width: 250px;
             border-radius: 50%;
-            
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);            
         }
 
         
@@ -55,7 +55,7 @@
 
     <% if(locals.isLogged) { %>
     <div class="container"
-    style="background-color: red;">
+    style="background-color: <%= colorFondoCookie %> ;">
         <% } %>   
         <%- include('partials/nav-bar'); %>
         <h1>User Profile</h1>
