@@ -1,1 +1,11 @@
-[]
+[
+ {
+  "id": 1,
+  "nombre": "victoria",
+  "mail": "v1@h.com",
+  "password": "$2a$10$Hk5tfvVdWxSm7pdDrYQ7Ie6tAtrkNMz4.wXe60c9zjfAkYv81YAOC",
+  "pais": "bra",
+  "colores": "blue",
+  "avatar": "1658524211057img.jpg"
+ }
+]
